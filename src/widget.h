@@ -5,6 +5,7 @@
 #include "num_lock.h"
 #include"mylineedit.h"
 #include "text.h"
+#include "fullkeyboard.h"
 
 namespace Ui {
 class Widget;
@@ -26,7 +27,8 @@ private slots:
 private:
     Ui::Widget *ui;
     Num_Lock *num;
-    text *t;
+    //text *t;
+    FullKeyboard *FKb;
 };
 
 #endif // WIDGET_H
