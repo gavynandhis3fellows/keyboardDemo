@@ -16,6 +16,7 @@ public:
     ~FullKeyboard();
 protected slots:
     void doProcessChangeCase(bool);
+    void doProcessGetEdit(bool);
 
 private:
     Ui::FullKeyboard *ui;

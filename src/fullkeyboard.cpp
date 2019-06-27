@@ -2,7 +2,6 @@
 #include "ui_fullkeyboard.h"
 #include <QPixmap>
 #include <QIcon>
-#include <QDebug>
 
 FullKeyboard::FullKeyboard(QWidget *parent) :
     QWidget(parent),
@@ -21,11 +20,36 @@ FullKeyboard::~FullKeyboard()
 void FullKeyboard::Init()
 {
     connect(ui->btn_change,SIGNAL(clicked(bool)),this,SLOT(doProcessChangeCase(bool)));
-
-
+    connect(ui->btn_a,SIGNAL(clicked(bool)),this,SLOT(doProcessGetEdit(bool)));
+    connect(ui->btn_s,SIGNAL(clicked(bool)),this,SLOT(doProcessGetEdit(bool)));
+    connect(ui->btn_d,SIGNAL(clicked(bool)),this,SLOT(doProcessGetEdit(bool)));
+    /*connect(ui->btn_f,SIGNAL(clicked(bool)),this,SLOT(doProcessGetEdit(bool)));
+    connect(ui->btn_g,SIGNAL(clicked(bool)),this,SLOT(doProcessGetEdit(bool)));
+    connect(ui->btn_h,SIGNAL(clicked(bool)),this,SLOT(doProcessGetEdit(bool)));
+    connect(ui->btn_j,SIGNAL(clicked(bool)),this,SLOT(doProcessGetEdit(bool)));
+    connect(ui->btn_k,SIGNAL(clicked(bool)),this,SLOT(doProcessGetEdit(bool)));
+    connect(ui->btn_l,SIGNAL(clicked(bool)),this,SLOT(doProcessGetEdit(bool)));
+    connect(ui->btn_q,SIGNAL(clicked(bool)),this,SLOT(doProcessGetEdit(bool)));
+    connect(ui->btn_w,SIGNAL(clicked(bool)),this,SLOT(doProcessGetEdit(bool)));
+    connect(ui->btn_e,SIGNAL(clicked(bool)),this,SLOT(doProcessGetEdit(bool)));
+    connect(ui->btn_r,SIGNAL(clicked(bool)),this,SLOT(doProcessGetEdit(bool)));
+    connect(ui->btn_t,SIGNAL(clicked(bool)),this,SLOT(doProcessGetEdit(bool)));
+    connect(ui->btn_y,SIGNAL(clicked(bool)),this,SLOT(doProcessGetEdit(bool)));
+    connect(ui->btn_u,SIGNAL(clicked(bool)),this,SLOT(doProcessGetEdit(bool)));
+    connect(ui->btn_i,SIGNAL(clicked(bool)),this,SLOT(doProcessGetEdit(bool)));
+    connect(ui->btn_o,SIGNAL(clicked(bool)),this,SLOT(doProcessGetEdit(bool)));
+    connect(ui->btn_p,SIGNAL(clicked(bool)),this,SLOT(doProcessGetEdit(bool)));
+    connect(ui->btn_z,SIGNAL(clicked(bool)),this,SLOT(doProcessGetEdit(bool)));
+    connect(ui->btn_x,SIGNAL(clicked(bool)),this,SLOT(doProcessGetEdit(bool)));
+    connect(ui->btn_c,SIGNAL(clicked(bool)),this,SLOT(doProcessGetEdit(bool)));
+    connect(ui->btn_v,SIGNAL(clicked(bool)),this,SLOT(doProcessGetEdit(bool)));
+    connect(ui->btn_b,SIGNAL(clicked(bool)),this,SLOT(doProcessGetEdit(bool)));
+    connect(ui->btn_n,SIGNAL(clicked(bool)),this,SLOT(doProcessGetEdit(bool)));
+    connect(ui->btn_m,SIGNAL(clicked(bool)),this,SLOT(doProcessGetEdit(bool)));*/
 
 }
 
+//判斷點擊次數每點擊一次字母大小來回切換
 void FullKeyboard::doProcessChangeCase(bool)
 {
     static int i = 0;
@@ -88,4 +112,96 @@ void FullKeyboard::doProcessChangeCase(bool)
         ui->btn_m->setText("m");
     }
 
+}
+
+void FullKeyboard::doProcessGetEdit(bool)
+{
+    QString btna = ui->btn_a->text();
+    ui->textEdit->setText(btna);
+
+    QString btns = ui->btn_s->text();
+    ui->textEdit->setText(btns);
+
+    QString btnd = ui->btn_d->text();
+    ui->textEdit->setText(btnd);
+
+   /* QString btnf = ui->btn_f->text();
+    ui->textEdit->setText(btnf);
+
+    QString btng = ui->btn_g->text();
+    ui->textEdit->setText(btng);
+
+    QString btnh = ui->btn_h->text();
+    ui->textEdit->setText(btna);
+
+    QString btnj = ui->btn_j->text();
+    ui->textEdit->setText(btnj);
+
+    QString btnk = ui->btn_k->text();
+    ui->textEdit->setText(btnk);
+
+    QString btnl = ui->btn_l->text();
+    ui->textEdit->setText(btnl);
+
+    QString btnq = ui->btn_q->text();
+    ui->textEdit->setText(btnq);
+
+    QString btnw = ui->btn_w->text();
+    ui->textEdit->setText(btnw);
+    QString btne = ui->btn_e->text();
+    ui->textEdit->setText(btne);
+
+    QString btnr = ui->btn_r->text();
+    ui->textEdit->setText(btnr);
+
+    QString btnt = ui->btn_t->text();
+    ui->textEdit->setText(btnt);
+
+    QString btny = ui->btn_y->text();
+    ui->textEdit->setText(btny);
+
+    QString btnu = ui->btn_u->text();
+    ui->textEdit->setText(btnu);
+
+    QString btni = ui->btn_i->text();
+    ui->textEdit->setText(btni);
+
+    QString btno = ui->btn_o->text();
+    ui->textEdit->setText(btno);
+
+    QString btnp = ui->btn_p->text();
+    ui->textEdit->setText(btnp);
+
+    QString btnz = ui->btn_z->text();
+    ui->textEdit->setText(btnz);
+
+    QString btnx = ui->btn_x->text();
+    ui->textEdit->setText(btnx);
+
+    QString btnc = ui->btn_c->text();
+    ui->textEdit->setText(btnc);
+
+    QString btnv = ui->btn_v->text();
+    ui->textEdit->setText(btnv);
+
+    QString btnb = ui->btn_b->text();
+    ui->textEdit->setText(btnb);
+
+    QString btnn = ui->btn_n->text();
+    ui->textEdit->setText(btnn);
+
+    QString btnm = ui->btn_m->text();
+    ui->textEdit->setText(btnm);
+    /*QString btna = ui->btn_a->text();
+    ui->textEdit->setText(btna);
+    QString btna = ui->btn_a->text();
+    ui->textEdit->setText(btna);
+    QString btna = ui->btn_a->text();
+    ui->textEdit->setText(btna);
+    QString btna = ui->btn_a->text();
+    ui->textEdit->setText(btna);
+    QString btna = ui->btn_a->text();
+    ui->textEdit->setText(btna);
+    QString btna = ui->btn_a->text();
+    ui->textEdit->setText(btna);*/
 }
