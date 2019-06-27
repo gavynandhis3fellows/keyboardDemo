@@ -8,6 +8,8 @@ FullKeyboard::FullKeyboard(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::FullKeyboard)
 {
+    setWindowFlags(Qt::CustomizeWindowHint|Qt::FramelessWindowHint);
+    hide();
     ui->setupUi(this);
     Init();
 
