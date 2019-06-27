@@ -16,16 +16,20 @@ SOURCES += main.cpp\
         widget.cpp \
     num_lock.cpp \
     text.cpp \
-    mylineedit.cpp
+    mylineedit.cpp \
+     fullkeyboard.cpp
 
 HEADERS  += widget.h \
     num_lock.h \
     text.h \
-    mylineedit.h
+    mylineedit.h \
+    fullkeyboard.h
 
 FORMS    += widget.ui \
     num_lock.ui \
-    text.ui
+    text.ui \
+    fullkeyboard.ui
 
 RESOURCES += \
-    pic.qrc
+    pic.qrc \
+    images.qrc
