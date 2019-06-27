@@ -6,9 +6,10 @@ Widget::Widget(QWidget *parent) :
     ui(new Ui::Widget)
 {
     ui->setupUi(this);
+
     connect(ui->lineEdit, SIGNAL(clicked()), this, SLOT(lineEditClicked()));
-    Num_Lock *nl=new Num_Lock(this);
-    connect(nl,SIGNAL(checkout()),this,SLOT(CheckOut()));
+    num=new Num_Lock(this);
+    connect(num,SIGNAL(checkout()),this,SLOT(CheckOut()));
 }
 
 Widget::~Widget()
@@ -17,15 +18,13 @@ Widget::~Widget()
 }
 
 void Widget::lineEditClicked() {
-    num = new Num_Lock(this);
+
     num->move(169,230);
     num->show();
 }
 
 void Widget::CheckOut() {
-    t = new text(this);
-    t->move(4,230);
-    t->show();
-    num = new Num_Lock(this);
-    num->hide();
+    FKb = new FullKeyboard(this);
+    FKb->move(4,230);
+    FKb->show();
 }

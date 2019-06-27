@@ -1,4 +1,5 @@
 # Qt pro.user
+**/*.autosave
 *.pro.user
 **/*.pro.user
 

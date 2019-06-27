@@ -18,8 +18,13 @@ public:
 private slots:
     void on_num_bd_clicked();
 
+    void on_num_1_clicked();
+
 private:
     Ui::Num_Lock *ui;
+
+    QString a;
+    QStringList b;
 
 signals:
     void checkout();

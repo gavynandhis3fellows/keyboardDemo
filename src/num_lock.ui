@@ -16,7 +16,7 @@
   <property name="styleSheet">
    <string notr="true"/>
   </property>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="num_lineEdit">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -26,7 +26,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>10</string>
+    <string/>
    </property>
   </widget>
   <widget class="QGroupBox" name="groupBox">
@@ -166,7 +166,7 @@ border:1px solid #FB8800;
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_6">
+   <widget class="QPushButton" name="num_7">
     <property name="geometry">
      <rect>
       <x>138</x>
@@ -189,7 +189,7 @@ border:1px solid #FB8800;
      <string>7</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_7">
+   <widget class="QPushButton" name="num_B">
     <property name="geometry">
      <rect>
       <x>74</x>
@@ -212,7 +212,7 @@ border:1px solid #FB8800;
      <string>B</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_8">
+   <widget class="QPushButton" name="num_9">
     <property name="geometry">
      <rect>
       <x>266</x>
@@ -235,7 +235,7 @@ border:1px solid #FB8800;
      <string>9</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_9">
+   <widget class="QPushButton" name="num_8">
     <property name="geometry">
      <rect>
       <x>202</x>
@@ -258,7 +258,7 @@ border:1px solid #FB8800;
      <string>8</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_10">
+   <widget class="QPushButton" name="num_A">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -281,7 +281,7 @@ border:1px solid #FB8800;
      <string>A</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_11">
+   <widget class="QPushButton" name="num_4">
     <property name="geometry">
      <rect>
       <x>138</x>
@@ -304,7 +304,7 @@ border:1px solid #FB8800;
      <string>4</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_12">
+   <widget class="QPushButton" name="num_D">
     <property name="geometry">
      <rect>
       <x>74</x>
@@ -327,7 +327,7 @@ border:1px solid #FB8800;
      <string>D</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_13">
+   <widget class="QPushButton" name="num_6">
     <property name="geometry">
      <rect>
       <x>266</x>
@@ -350,7 +350,7 @@ border:1px solid #FB8800;
      <string>6</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_14">
+   <widget class="QPushButton" name="num_5">
     <property name="geometry">
      <rect>
       <x>202</x>
@@ -373,7 +373,7 @@ border:1px solid #FB8800;
      <string>5</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_15">
+   <widget class="QPushButton" name="num_C">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -396,7 +396,7 @@ border:1px solid #FB8800;
      <string>C</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_16">
+   <widget class="QPushButton" name="num_1">
     <property name="geometry">
      <rect>
       <x>138</x>
@@ -419,7 +419,7 @@ border:1px solid #FB8800;
      <string>1</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_17">
+   <widget class="QPushButton" name="num_F">
     <property name="geometry">
      <rect>
       <x>74</x>
@@ -442,7 +442,7 @@ border:1px solid #FB8800;
      <string>F</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_18">
+   <widget class="QPushButton" name="num_3">
     <property name="geometry">
      <rect>
       <x>266</x>
@@ -465,7 +465,7 @@ border:1px solid #FB8800;
      <string>3</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_19">
+   <widget class="QPushButton" name="num_2">
     <property name="geometry">
      <rect>
       <x>202</x>
@@ -488,7 +488,7 @@ border:1px solid #FB8800;
      <string>2</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_20">
+   <widget class="QPushButton" name="num_E">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -535,7 +535,7 @@ background-image: url(:/new/prefix1/bd.jpg);
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_22">
+   <widget class="QPushButton" name="num_AC">
     <property name="geometry">
      <rect>
       <x>74</x>
@@ -558,7 +558,7 @@ border:1px solid #FB8800;
      <string>±</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_23">
+   <widget class="QPushButton" name="num_Dot">
     <property name="geometry">
      <rect>
       <x>266</x>
@@ -653,7 +653,7 @@ border:1px solid #FB8800;
      <string>BIN</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_27">
+   <widget class="QPushButton" name="num_0">
     <property name="geometry">
      <rect>
       <x>138</x>
@@ -702,7 +702,7 @@ border:1px solid #FB8800;
    </widget>
   </widget>
   <zorder>groupBox</zorder>
-  <zorder>lineEdit</zorder>
+  <zorder>num_lineEdit</zorder>
  </widget>
  <resources/>
  <connections/>
